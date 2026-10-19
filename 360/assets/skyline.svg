@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="752" height="272" viewBox="0 0 752 272">
+  <defs>
+    <linearGradient id="sky"><stop stop-color="#363633"/><stop offset="1" stop-color="#45453e"/></linearGradient>
+    <pattern id="windows" width="10" height="18" patternUnits="userSpaceOnUse"><path d="M0 0v18M5 0v18" stroke="#b3b3a4" stroke-width="1" opacity=".55"/></pattern>
+    <pattern id="horizontal" width="12" height="9" patternUnits="userSpaceOnUse"><path d="M0 1h12" stroke="#74746a" stroke-width="1" opacity=".4"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h752v272H0z"/>
+  <path fill="#5b5b51" d="M0 0h248v272H0z"/>
+  <path fill="url(#windows)" d="M0 0h248v272H0z"/>
+  <path fill="#252522" d="M0 0h138v272H0z"/>
+  <path d="M0 3l138 45M0 16l138 45M0 29l138 45M0 42l138 45M0 55l138 45M0 68l138 45M0 81l138 45M0 94l138 45M0 107l138 45M0 120l138 45M0 133l138 45M0 146l138 45M0 159l138 45M0 172l138 45M0 185l138 45M0 198l138 45M0 211l138 45M0 224l138 45" stroke="#9c9c8d" stroke-width="2" opacity=".8"/>
+  <path fill="#080909" d="M0 209l99-28 91 35v56H0z"/>
+  <path fill="url(#horizontal)" d="M0 209l99-28 91 35v56H0z"/>
+  <path fill="#08090a" d="M541 230l211-74v116H541z"/>
+  <path fill="url(#horizontal)" d="M541 230l211-74v116H541z"/>
+</svg>

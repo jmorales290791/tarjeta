@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Báktara Arceo · 360 Consulting</title>
+  <meta name="description" content="Conecta con Báktara Arceo, Transformation Consultant en 360 Consulting. Business Intelligence, Finance y Management.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Báktara Arceo · 360 Consulting">
+  <meta property="og:description" content="Transformation Consultant · Business Intelligence · Finance · Management">
+  <link rel="icon" href="assets/360-logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/three.min.js" defer></script>
+  <script src="assets/qrcode.min.js" defer></script>
+  <script src="assets/card.js" defer></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+
+  <main class="page" aria-label="Tarjeta digital de Báktara Arceo">
+    <div class="scene" id="scene">
+      <div class="card" id="card">
+        <div class="card-inner" id="cardInner">
+          <section class="face front" id="frontFace" aria-labelledby="fName">
+            <div class="banner" aria-hidden="true">
+              <div class="banner-grid"></div>
+              <div class="shine"></div>
+              <img class="brand-mark" src="assets/360-logo.jpg" alt="" width="68" height="68">
+            </div>
+            <div class="portrait-wrap">
+              <img class="portrait" src="assets/baktara-arceo.jpg" alt="Báktara Arceo" width="112" height="112">
+            </div>
+            <div class="card-body">
+              <h1 class="name" id="fName">Báktara Arceo</h1>
+              <p class="role" id="fRole">Transformation Consultant</p>
+              <p class="sr-only">360 Consulting</p>
+              <p class="expertise" aria-label="Business Intelligence, Finance y Management">
+                <span>Business Intelligence</span><i aria-hidden="true"></i><span>Finance</span><i aria-hidden="true"></i><span>Management</span>
+              </p>
+
+              <nav class="contacts" aria-label="Medios de contacto">
+                <a class="row" href="https://wa.me/525527021952?text=Hola%20B%C3%A1ktara%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20360%20Consulting." target="_blank" rel="noopener noreferrer" aria-label="Contactar a Báktara por WhatsApp al 55 2702 1952">
+                  <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 001.51 5.26l-.999 3.648 3.978-1.615zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.148-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></span>
+                  <span class="tx"><small>WhatsApp</small><b>55.2702.1952</b></span>
+                  <span class="row-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="row" href="tel:+525527021952" aria-label="Llamar a Báktara al 55 2702 1952">
+                  <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M15 3a6 6 0 0 1 6 6M15 7a2 2 0 0 1 2 2"/></svg></span>
+                  <span class="tx"><small>Llamar</small><b>55.2702.1952</b></span>
+                  <span class="row-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="row" href="mailto:info@360consulting.com.mx" aria-label="Enviar correo a info@360consulting.com.mx">
+                  <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 8L22 6"/></svg></span>
+                  <span class="tx"><small>Correo</small><b>info@360consulting.com.mx</b></span>
+                  <span class="row-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="row" href="https://360consulting.com.mx" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio web de 360 Consulting">
+                  <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a16 16 0 0 1 0 18M12 3a16 16 0 0 0 0 18"/></svg></span>
+                  <span class="tx"><small>Sitio web</small><b>360consulting.com.mx</b></span>
+                  <span class="row-arrow" aria-hidden="true">↗</span>
+                </a>
+              </nav>
+
+              <div class="actions">
+                <a class="btn btn-save" id="saveBtn" href="assets/360-Consulting-Baktara-Arceo.vcf" download="360-Consulting-Baktara-Arceo.vcf">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
+                  <span>Guardar contacto</span>
+                </a>
+                <button class="btn btn-qr" id="qrBtn" type="button" aria-controls="backFace" aria-expanded="false">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM21 14v7h-7"/></svg>
+                  Ver QR
+                </button>
+              </div>
+              <button class="btn btn-share" id="shareBtn" type="button">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg>
+                Compartir tarjeta
+              </button>
+              <noscript><p class="noscript">Activa JavaScript para ver el QR y compartir la tarjeta. Los enlaces y Guardar contacto funcionan directamente.</p></noscript>
+            </div>
+          </section>
+
+          <section class="face back" id="backFace" aria-labelledby="qrTitle" aria-hidden="true" inert>
+            <div class="banner" aria-hidden="true"><div class="banner-grid"></div><div class="shine"></div><img class="brand-mark" src="assets/360-logo.jpg" alt="" width="68" height="68"></div>
+            <div class="portrait-wrap"><img class="portrait" src="assets/baktara-arceo.jpg" alt="" width="112" height="112"></div>
+            <div class="back-body">
+              <p class="eyebrow">360 Consulting</p>
+              <h2 id="qrTitle">Conectemos</h2>
+              <p class="qr-description">Escanea el código para abrir mi tarjeta y guardar mi contacto.</p>
+              <div class="qr-frame"><div id="qr" role="img" aria-label="Código QR para abrir la tarjeta digital de Báktara Arceo"></div></div>
+              <p class="qr-name">Báktara Arceo</p>
+              <p class="qr-role">Transformation Consultant</p>
+              <a class="qr-link" id="cardLink" href="https://jmorales290791.github.io/tarjeta/360/">Abrir tarjeta digital ↗</a>
+              <button class="btn btn-back" id="backBtn" type="button">← Volver a la tarjeta</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="foot">© <span id="yr">2026</span> 360 Consulting<span class="hint-tap">Mueve el cursor sobre la tarjeta · toca «Ver QR» para voltear</span></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="shareDialog" aria-labelledby="shareTitle">
+    <h2 id="shareTitle">Compartir tarjeta</h2>
+    <p>Copia este enlace y compártelo con tus contactos.</p>
+    <label class="sr-only" for="shareLink">Enlace de la tarjeta</label>
+    <input id="shareLink" type="url" readonly spellcheck="false">
+    <button class="btn btn-save" id="copyBtn" type="button">Copiar enlace</button>
+    <form method="dialog"><button class="dialog-close" type="submit">Cerrar</button></form>
+  </dialog>
+</body>
+</html>
